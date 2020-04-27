@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签练习2</title>
+    <style>
+        table {
+            width: 300px;
+            height: 200px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid palevioletred;
+            border-collapse: collapse;
+            font-size: 19px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!--表格-->
+
+<body>
+    <table cellpadding="7" cellspacing="0">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>sexual</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ike</td>
+                <td>male</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>ella</td>
+                <td>female</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>cainyum</td>
+                <td colspan="2">unknown</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--列表-->
+    <ul>
+        <li>burger</li>
+        <li>pizza</li>
+        <li>cheese</li>
+    </ul>
+    <ol>
+        <li>burger</li>
+        <li>pizza</li>
+        <li>cheese</li>
+    </ol>
+    <dl>
+        <dt>联系方式</dt>
+        <dd>QQ</dd>
+        <dd>Wechat</dd>
+    </dl>
+    <!--表单-->
+    <form action="demo.php" method="POST" name="name">
+        account:<input type="text" name="account" value="please enter your username"><br />
+        password:<input type="password" name="password"><br />
+        sexual: male<input type="radio" name="sex" value="male" checked="checked"> female<input type="radio" name="sex"
+            value="female"><br />
+        hobby: eating<input type="checkbox" name="hobby"> sleeping<input type="checkbox" name="hobby"> <label
+            for="hdd">hittingdoudou</label><input type="checkbox" name="hobby" id="hdd"><br />
+        <input type="submit"><input type="reset"><br />
+        <input type="button" value="获取验证🐎"><br />
+        上传头像：<input type="file">
+    </form>
+    <!--下拉列表-->
+    排位刚开女朋友打来电话，你会选择：
+    <select>
+        <option>亚索</option>
+        <option selected>瑞文</option>
+        <option>盲僧</option>
+    </select><br />
+    <!--文本域-->
+    意见反馈：
+    <textarea rows="5" cols="30">下路一直叫我去，我怎么去啊？</textarea>
+</body>
+
+</html>
